@@ -47,6 +47,9 @@
             this.lblDexterityScore = new System.Windows.Forms.Label();
             this.lblStrengthScore = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacterImage)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -226,7 +229,7 @@
             this.groupBox1.Controls.Add(this.lblCharm);
             this.groupBox1.Controls.Add(this.lblWisdom);
             this.groupBox1.Controls.Add(this.lblIntelligence);
-            this.groupBox1.Location = new System.Drawing.Point(230, 12);
+            this.groupBox1.Location = new System.Drawing.Point(280, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(250, 232);
             this.groupBox1.TabIndex = 4;
@@ -292,11 +295,42 @@
             this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 2;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(230, 324);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(521, 27);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("SWGothe", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(67, 328);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Character Name:";
+            // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("SWGothe", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStart.Location = new System.Drawing.Point(313, 365);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(193, 73);
+            this.btnStart.TabIndex = 7;
+            this.btnStart.Text = "Start Your Adventure";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // CharacterCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 450);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cbCharm);
             this.Controls.Add(this.cbIntelligence);
@@ -312,6 +346,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -336,5 +371,8 @@
         private System.Windows.Forms.Label lblDexterityScore;
         private System.Windows.Forms.Label lblStrengthScore;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnStart;
     }
 }

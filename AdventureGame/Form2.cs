@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace AdventureGame
 {
-    public partial class Form2 : Form
+    public partial class DungeonRoom : Form
     {
-        public Form2()
+        public DungeonRoom()
         {
             InitializeComponent();
         }
